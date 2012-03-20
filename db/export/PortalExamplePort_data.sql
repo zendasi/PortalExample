@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.1.2
 -- Dumped by pg_dump version 9.1.2
--- Started on 2012-03-13 21:24:37 EDT
+-- Started on 2012-03-20 18:45:42 EDT
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -912,6 +912,18 @@ INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinme
 </properties>
 
 ', 'free', 0, NULL);
+INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinmenu, extraconfig) VALUES ('cap', 'trasparenza', 3, 'internal', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Calendar Page</property>
+<property key="it">Calendar Page</property>
+</properties>
+
+', 'free', 1, '<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+</config>
+
+');
 
 
 --
@@ -1257,6 +1269,66 @@ INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWER
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWERED_BY', 'it', '<span lang="en">(italian) Bassed on</span><a href="http://www.japsportal.org/"><span lang="en">jAPS 2.0 entando &ndash; Java Agile Portal System, version 2.2</span></a>');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'en', 'Open Source Collaborative Education (OSCE)');
 INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'it', 'A content management system for universities and education');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_SEARCH_GO', 'en', 'Search');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_SEARCH_GO', 'it', 'Ricerca');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_PREVIOUS', 'en', 'Previuos Month');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_PREVIOUS', 'it', 'Mese Precedente');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_NEXT', 'en', 'Next Month');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_NEXT', 'it', 'Prossimo Mese');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_CHOOSE', 'en', 'Select Month');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_CHOOSE', 'it', 'Seleziona Mese');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JANUARY', 'en', 'January');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JANUARY', 'it', 'Gennaio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_FEBRUARY', 'en', 'February');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_FEBRUARY', 'it', 'Febbraio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_MARCH', 'en', 'March');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_MARCH', 'it', 'Marzo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_APRIL', 'en', 'April');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_APRIL', 'it', 'Aprile');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_MAY', 'en', 'May');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_MAY', 'it', 'Maggio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JUNE', 'en', 'June');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JUNE', 'it', 'Giugno');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JULY', 'en', 'July');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_JULY', 'it', 'Luglio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_AUGUST', 'en', 'August');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_AUGUST', 'it', 'Agosto');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_SEPTEMBER', 'en', 'September');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_SEPTEMBER', 'it', 'Settembre');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_OCTOBER', 'en', 'October');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_OCTOBER', 'it', 'Ottobre');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_NOVEMBER', 'en', 'November');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_NOVEMBER', 'it', 'Novembre');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_DECEMBER', 'en', 'December');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_MONTH_DECEMBER', 'it', 'Dicembre');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_YEAR_CHOOSE', 'en', 'Select Year');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_YEAR_CHOOSE', 'it', 'Seleziona Anno');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_SUMMARY', 'en', 'Event calendar');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_SUMMARY', 'it', 'Calendario eventi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_CAPTION', 'en', 'Descr event calendar');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_CAPTION', 'it', 'Calendario eventi descr');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_NUMBER', 'en', 'week num');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_NUMBER', 'it', 'num sett');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_MONDAY', 'en', 'mon');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_MONDAY', 'it', 'lun');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_TUESDAY', 'en', 'tue');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_TUESDAY', 'it', 'mar');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_WEDNESDAY', 'en', 'wed');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_WEDNESDAY', 'it', 'mer');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_THURSDAY', 'en', 'thu');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_THURSDAY', 'it', 'gio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_FRIDAY', 'en', 'fri');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_FRIDAY', 'it', 'ven');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_SATURDAY', 'en', 'sat');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_SATURDAY', 'it', 'sab');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_SUNDAY', 'en', 'sun');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_WEEK_SUNDAY', 'it', 'dom');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_TITLE', 'en', 'Events');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_TITLE', 'it', 'Eventi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_PREVIOUS', 'en', 'previous events');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_PREVIOUS', 'it', 'precedenti eventi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_NEXT', 'en', 'next events');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jpcalendar_EVENTS_NEXT', 'it', 'prossimi eventi');
 
 
 --
@@ -1379,6 +1451,16 @@ INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode
 	<parameter name="linkDescr_{lang}">Link description in lang {lang}</parameter>
 	<action name="listViewerConfig"/>
 </config>', 'jacms', NULL, NULL, 1);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked) VALUES ('jpcalendar_calendar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Calendar</property>
+<property key="it">Calendario</property>
+</properties>', NULL, 'jpcalendar', NULL, NULL, 1);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked) VALUES ('jpcalendar_dailyEvents', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Events of the Day</property>
+<property key="it">Eventi del giorno</property>
+</properties>', NULL, 'jpcalendar', NULL, NULL, 1);
 
 
 --
@@ -1773,6 +1855,7 @@ INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcon
 ', 'CNG15');
 INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('old_town_traffic_pass', 7, 'card_list', NULL, NULL);
 INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('old_town_traffic_pass', 12, 'news_latest', NULL, NULL);
+INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('cap', 3, 'jpcalendar_calendar', NULL, NULL);
 
 
 --
@@ -1868,6 +1951,26 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'cont
 			</list>
 		</attributes>
 	</contenttype>
+<contenttype typecode="CAL" typedescr="Event" viewpage="newsview"
+listmodel="12" defaultmodel="2">
+	<attributes>
+		<attribute name="StartDate" attributetype="Date" 					indexingtype="text"
+		searcheable="true" required="true" />
+		<attribute name="EndDate" attributetype="Date" indexingtype="text"
+			searcheable="true" required="true" />
+		<attribute name="Place" attributetype="Longtext" 					indexingtype="text"
+				searcheable="true"/>
+		<attribute name="Subject" attributetype="Hypertext" 				indexingtype="text"
+			searcheable="true"/>
+		<attribute name="BodyText" attributetype="Hypertext"
+			indexingtype="text" searcheable="true"/>
+		<attribute name="Picture" attributetype="Image"/>
+		<list name="RelatedLinkList" attributetype="Monolist"
+			nestedtype="Link"/>
+		<list name="AttachmentsList" attributetype="Monolist"
+			nestedtype="Attach"/>
+	</attributes>
+</contenttype>
 	<contenttype typecode="CNG" typedescr="Contenuto generico" viewpage="contentview" listmodel="11" defaultmodel="1">
 		<attributes>
 			<attribute name="Titolo" attributetype="Text" searcheable="true" indexingtype="TEXT">
@@ -1992,7 +2095,14 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'cont
 </contenttypes>
 
 ');
-INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'indexdir20120305183057');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'jpcalendar_Config', 'Configure Calendar', '<calendarConfig>
+	<contentType code="CAL" />
+	<dateAttributes>
+		<start name="StartDate" />
+		<end name="EndDate" />
+	</dateAttributes>
+</calendarConfig>');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'indexdir20120320184317');
 
 
 --
@@ -2056,7 +2166,7 @@ INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numval
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Oggetto', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
 
 
--- Completed on 2012-03-13 21:24:37 EDT
+-- Completed on 2012-03-20 18:45:42 EDT
 
 --
 -- PostgreSQL database dump complete

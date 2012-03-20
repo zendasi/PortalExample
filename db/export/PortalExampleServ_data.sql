@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.1.2
 -- Dumped by pg_dump version 9.1.2
--- Started on 2012-03-13 21:24:37 EDT
+-- Started on 2012-03-20 18:45:42 EDT
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -81,7 +81,7 @@ INSERT INTO authuserroles (username, rolename) VALUES ('admin', 'admin');
 -- Data for Name: authusers; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
-INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10', '2012-03-10', NULL, 1);
+INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10', '2012-03-20', NULL, 1);
 
 
 --
@@ -104,7 +104,7 @@ INSERT INTO authusershortcuts (username, config) VALUES ('admin', '<shortcuts>
 </shortcuts>');
 
 
--- Completed on 2012-03-13 21:24:38 EDT
+-- Completed on 2012-03-20 18:45:42 EDT
 
 --
 -- PostgreSQL database dump complete
