@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.1.2
 -- Dumped by pg_dump version 9.1.2
--- Started on 2012-03-24 20:44:42 EDT
+-- Started on 2012-03-24 22:17:05 EDT
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -2135,7 +2135,7 @@ INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numval
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Oggetto', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
 
 
--- Completed on 2012-03-24 20:44:42 EDT
+-- Completed on 2012-03-24 22:17:05 EDT
 
 --
 -- PostgreSQL database dump complete
